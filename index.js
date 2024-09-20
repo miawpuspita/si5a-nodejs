@@ -22,7 +22,8 @@ const server = http.createServer((req, res)=>
 
     }
     res.write(JSON.stringify({
-        'message': 'selamat pagi',
+        'message': message,
+        'data'   : data,
         'status' : 'success'
     }));
     res.end();
