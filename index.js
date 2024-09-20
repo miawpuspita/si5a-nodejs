@@ -10,13 +10,13 @@ const server = http.createServer((req, res)=>
     res.writeHead(200, { 'content-Type' : 'application/json'});
 
     if(req.url ==='/dosen'){
-        messeage ="List data dosen";
+        message ="List data dosen";
         data = ['ahamad','hafiz','widi'];
     } else if(req.url === '/mahasiswa') {
-        messeage ="List data mahasiswa";
+        message ="List data mahasiswa";
         data = ['puspita','angel','nabila'];
     }else{
-        messeage ="Tidak ditemukan";
+        message ="Tidak ditemukan";
         data = [];
 
 
